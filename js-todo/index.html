@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TodoJS</title>
+  <style>
+    html,
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #app {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    #app div {
+      clear: both;
+      padding-bottom: 2.5em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #999;
+    }
+
+    #app div input {
+      float: left;
+      width: 70%;
+      padding: 0.5em;
+    }
+
+    #app div button {
+      float: right;
+      width: 20%;
+      padding: 0.5em;
+    }
+
+    #todoList {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #todoList li {
+      padding: 0.5em 1em 0.5em 1em;
+      clear: both;
+      border-bottom: 1px solid gray;
+    }
+
+    #todoList li:hover {
+      background-color: #eaeaea;
+    }
+
+    #todoList li input {
+      float: left;
+      margin-right: 0.5em;
+    }
+
+    #todoList li span {
+      vertical-align: top;
+    }
+
+    #todoList li button {
+      float: right;
+    }
+  </style>
 </head>
+
 <body>
   <div id="app"></div>
   <script src="js/app.js"></script>
 </body>
+
 </html>
